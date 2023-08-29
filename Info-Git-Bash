@@ -1,0 +1,170 @@
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes
+$ git config --global user.name "@thaumodan"
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes
+$ git config --global user.email "thaumo@bol.com.br"
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes
+$ git init
+Initialized empty Git repository in C:/Users/User/Desktop/Programador FullStack/Vers
+ionamento/git/SENAI-Versoes-Colaboracoes/.git/
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        versoes.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        versoes.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git add versoes.txt
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   versoes.txt
+
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git commit -m "Meu Primeiro Commit"
+[master (root-commit) 407397f] Meu Primeiro Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 versoes.txt
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git log
+commit 407397fc8adb8e8695003bb18fe0194f714f3992 (HEAD -> master)
+Author: @thaumodan <thaumo@bol.com.br>
+Date:   Mon Aug 28 13:27:38 2023 -0300
+
+    Meu Primeiro Commit
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git config --global user.name "thaumodan"
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git log
+commit 407397fc8adb8e8695003bb18fe0194f714f3992 (HEAD -> master)
+Author: @thaumodan <thaumo@bol.com.br>
+Date:   Mon Aug 28 13:27:38 2023 -0300
+
+    Meu Primeiro Commit
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git remote add origin https://github.com/thaumodan/SENAI-Versoes-Colaboracoes.git
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git remote -v
+origin  https://github.com/thaumodan/SENAI-Versoes-Colaboracoes.git (fetch)
+origin  https://github.com/thaumodan/SENAI-Versoes-Colaboracoes.git (push)
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/thaumodan/SENAI-Versoes-Colab
+oracoes.git'
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 217 bytes | 108.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/thaumodan/SENAI-Versoes-Colaboracoes.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 703 bytes | 70.00 KiB/s, done.
+From https://github.com/thaumodan/SENAI-Versoes-Colaboracoes
+   407397f..0d88a8d  master     -> origin/master
+Updating 407397f..0d88a8d
+Fast-forward
+ README.md | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 README.md
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git add .
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git commit -m "Adicionando o gitignore"
+[master 3aacd3e] Adicionando o gitignore
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 341 bytes | 170.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/thaumodan/SENAI-Versoes-Colaboracoes.git
+   0d88a8d..3aacd3e  master -> master
+branch 'master' set up to track 'origin/master'.
+
+User@NotebookTeA MINGW64 ~/Desktop/Programador FullStack/Versionamento/git/SENAI-Versoes-Colaboracoes (master)
+$
